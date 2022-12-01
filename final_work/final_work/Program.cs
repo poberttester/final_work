@@ -18,6 +18,21 @@ namespace final_work
 
         }
 
+        static string[] ShortStrings(string[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i].Length > 3)
+                {
+                    arr[i] = arr[i].Remove(3);
+                }
+
+            }
+
+            return arr;
+        }
+
+
 
 
 
