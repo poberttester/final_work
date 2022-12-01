@@ -7,8 +7,14 @@ namespace final_work
     {
         static void Main(string[] args)
         {
-            
-            
+            string[] array = CreateArray();
+            ShowArray(array);
+
+            string[] shortArray = ShortStrings(array);
+            ShowArray(shortArray);
+
+            Console.ReadKey();
+
         }
 
         static string[] CreateArray()
