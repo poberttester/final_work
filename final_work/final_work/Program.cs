@@ -32,6 +32,20 @@ namespace final_work
             return arr;
         }
 
+        static void ShowArray(string[] arr)
+        {
+            Console.WriteLine(String.Empty);
+            for (int i = 0; ; i++)
+            {
+                if (i < arr.Length - 1) Console.Write(arr[i] + ", ");
+                else if (i == arr.Length - 1)
+                {
+                    Console.Write(arr[i] + ".");
+                    Console.WriteLine(String.Empty);
+                    return;
+                }
+            }
+        }
 
 
 
